@@ -62,7 +62,6 @@ export function Sidebar() {
                 )}
             >
                 <div className="flex flex-col h-full pt-20 pb-4 px-4">
-                    {/* Profile Image */}
                     <div className="flex justify-center mb-8">
                         <div className="relative w-32 h-32 rounded-full border-4 border-primary overflow-hidden shadow-lg">
                             <Image

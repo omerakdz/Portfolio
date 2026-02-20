@@ -8,7 +8,6 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { name, email, message } = body;
 
-    // Validatie
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Alle velden zijn verplicht" },
@@ -16,7 +15,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Verstuur email
     const { data, error } = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
       to: ["omerakdeniz1208@gmail.com"],
